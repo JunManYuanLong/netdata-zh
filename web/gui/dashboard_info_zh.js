@@ -103,7 +103,7 @@ netdataDashboard.menu = {
     'cpu': {
         title: 'CPU总',
         icon: '<i class="fas fa-bolt"></i>',
-        info: '系统的每个CPU的详细信息。 可以从 <a href="#menu_system">System Overview</a> 获取系统CPU资源概况。'
+        info: '系统的每个CPU的详细信息。 可以从 <a href="#menu_system">系统概况</a> 获取系统CPU资源概况。'
     },
 
     'mem': {
@@ -163,7 +163,7 @@ netdataDashboard.menu = {
     'apps': {
         title: '应用',
         icon: '<i class="fas fa-heartbeat"></i>',
-        info: 'Per application statistics are collected using netdata\'s <code>apps.plugin</code>. This plugin walks through all processes and aggregates statistics for applications of interest, defined in <code>/etc/netdata/apps_groups.conf</code>, which can be edited by running <code>$ /etc/netdata/edit-config apps_groups.conf</code> (the default is <a href="https://github.com/netdata/netdata/blob/master/collectors/apps.plugin/apps_groups.conf" target="_blank">here</a>). The plugin internally builds a process tree (much like <code>ps fax</code> does), and groups processes together (evaluating both child and parent processes) so that the result is always a chart with a predefined set of dimensions (of course, only application groups found running are reported). The reported values are compatible with <code>top</code>, although the netdata plugin counts also the resources of exited children (unlike <code>top</code> which shows only the resources of the currently running processes). So for processes like shell scripts, the reported values include the resources used by the commands these scripts run within each timeframe.',
+        info: '使用<code>apps.plugin</code>工具获取到的每个应用的信息. 此插件遍历所有流程并汇总感兴趣的应用程序的统计信息, 在<code>/etc/netdata/apps_groups.conf</code>中定义。可以通过<code>$ /etc/netdata/edit-config apps_groups.conf</code> (默认配置 <a href="https://github.com/netdata/netdata/blob/master/collectors/apps.plugin/apps_groups.conf" target="_blank">here</a>).该插件在内部构建了一个进程树 (就像<code>ps fax</code> 做的事情)。分组处理（评估子进程和父进程），以便结果始终是具有预定义维度集的图表（当然，仅报告运行的应用程序组）。数据于 <code>top</code>得到的数据兼容,虽然netdata也计算了已经推出的子进程的资源 (不像 <code>top</code>只展示了正在运行的进程). 因此，对于shell脚本等进程，报告的值包括这些脚本在每个时间帧内运行的命令所使用的资源。',
         height: 1.5
     },
 
@@ -886,11 +886,11 @@ netdataDashboard.context = {
     },
 
     'apps.mem': {
-        info: 'Real memory (RAM) used by applications. This does not include shared memory.'
+        info: '应用使用的物理内存（RAM），不包括共享内存。'
     },
 
     'apps.vmem': {
-        info: 'Virtual memory allocated by applications. Please check <a href="https://github.com/netdata/netdata/tree/master/daemon#virtual-memory" target="_blank">this article</a> for more information.'
+        info: '虚拟内存分配。点击<a href="https://github.com/netdata/netdata/tree/master/daemon#virtual-memory" target="_blank">this article</a> 查看更多信息'
     },
 
     'apps.preads': {
