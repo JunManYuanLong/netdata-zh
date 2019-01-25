@@ -1615,7 +1615,7 @@ function renderPage(menus, data) {
 
     sidebar += '<li class="" style="padding-top:15px;"><a href="https://github.com/netdata/netdata/blob/master/docs/Add-more-charts-to-netdata.md#add-more-charts-to-netdata" target="_blank"><i class="fas fa-plus"></i> add more charts</a></li>';
     sidebar += '<li class=""><a href="https://github.com/netdata/netdata/tree/master/health#Health-monitoring" target="_blank"><i class="fas fa-plus"></i> add more alarms</a></li>';
-    sidebar += '<li class="" style="margin:20px;color:#666;"><small>netdata on <b>' + data.hostname.toString() + '</b>, collects every ' + ((data.update_every === 1) ? 'second' : data.update_every.toString() + ' seconds') + ' <b>' + data.dimensions_count.toLocaleString() + '</b> metrics, presented as <b>' + data.charts_count.toLocaleString() + '</b> charts and monitored by <b>' + data.alarms_count.toLocaleString() + '</b> alarms, using ' + Math.round(data.rrd_memory_bytes / 1024 / 1024).toLocaleString() + ' MB of memory for ' + NETDATA.seconds4human(data.update_every * data.history, {space: '&nbsp;'}) + ' of real-time history.<br/>&nbsp;<br/><b>netdata</b><br/>' + data.version.toString() + '</small></li>';
+    sidebar += '<li class="" style="margin:20px;color:#666;"><small>netdata汉化版运行在 <b>' + data.hostname.toString() + '</b>, collects every ' + ((data.update_every === 1) ? 'second' : data.update_every.toString() + ' seconds') + ' <b>' + data.dimensions_count.toLocaleString() + '</b> metrics, presented as <b>' + data.charts_count.toLocaleString() + '</b> charts and monitored by <b>' + data.alarms_count.toLocaleString() + '</b> alarms, using ' + Math.round(data.rrd_memory_bytes / 1024 / 1024).toLocaleString() + ' MB of memory for ' + NETDATA.seconds4human(data.update_every * data.history, {space: '&nbsp;'}) + ' of real-time history.<br/>&nbsp;<br/><b>netdata汉化版1.0，原版</b><br/>' + data.version.toString() + '</small></li>';
     sidebar += '</ul>';
     div.innerHTML = html;
     document.getElementById('sidebar').innerHTML = sidebar;
@@ -2576,7 +2576,7 @@ function initializeDynamicDashboardWithData(data) {
         }
 
         // update the dashboard title
-        document.title = options.hostname + ' netdata dashboard';
+        document.title = options.hostname + ' 资源监控';
 
         // close the splash screen
         $("#loadOverlay").css("display", "none");
