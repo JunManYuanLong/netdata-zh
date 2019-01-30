@@ -168,14 +168,14 @@ netdataDashboard.menu = {
     },
 
     'users': {
-        title: 'Users',
+        title: '用户',
         icon: '<i class="fas fa-user"></i>',
         info: 'Per user statistics are collected using netdata\'s <code>apps.plugin</code>. This plugin walks through all processes and aggregates statistics per user. The reported values are compatible with <code>top</code>, although the netdata plugin counts also the resources of exited children (unlike <code>top</code> which shows only the resources of the currently running processes). So for processes like shell scripts, the reported values include the resources used by the commands these scripts run within each timeframe.',
         height: 1.5
     },
 
     'groups': {
-        title: 'User Groups',
+        title: '用户组',
         icon: '<i class="fas fa-users"></i>',
         info: 'Per user group statistics are collected using netdata\'s <code>apps.plugin</code>. This plugin walks through all processes and aggregates statistics per user group. The reported values are compatible with <code>top</code>, although the netdata plugin counts also the resources of exited children (unlike <code>top</code> which shows only the resources of the currently running processes). So for processes like shell scripts, the reported values include the resources used by the commands these scripts run within each timeframe.',
         height: 1.5
