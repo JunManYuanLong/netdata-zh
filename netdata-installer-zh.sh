@@ -6,8 +6,3 @@ netdata_source_dir="$(pwd)"
 
 rm ${netdata_source_dir}/web/gui/dashboard_info.js
 cp ${netdata_source_dir}/web/gui/dashboard_info_zh.js ${netdata_source_dir}/web/gui/dashboard_info.js
-<<<<<<< HEAD
-./netdata-installer.sh
-=======
-./netdata-installer.sh
->>>>>>> origin/master
