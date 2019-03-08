@@ -61,13 +61,9 @@ netdataDashboard.menu = {
     'ipv4': {
         title: 'IPv4 联网状态',
         icon: '<i class="fas fa-cloud"></i>',
-        info: 'Metrics for the IPv4 stack of the system. ' +
+        info: '系统的IPv4堆栈的度量标准. ' +
             '<a href="https://en.wikipedia.org/wiki/IPv4" target="_blank">Internet Protocol version 4 (IPv4)</a> is ' +
-            'the fourth version of the Internet Protocol (IP). It is one of the core protocols of standards-based ' +
-            'internetworking methods in the Internet. IPv4 is a connectionless protocol for use on packet-switched ' +
-            'networks. It operates on a best effort delivery model, in that it does not guarantee delivery, nor does ' +
-            'it assure proper sequencing or avoidance of duplicate delivery. These aspects, including data integrity, ' +
-            'are addressed by an upper layer transport protocol, such as the Transmission Control Protocol (TCP).'
+            '第四版互联网协议（IP）. 它是互联网中基于标准的网络互联方法的核心协议之一。IPv4是用于分组交换网络的无连接协议。它以尽力交付模式运行，因为它不保证交付，也不保证正确排序或避免重复交付。 这些方面（包括数据完整性）由上层传输协议（例如传输控制协议（TCP））解决。'
     },
 
     'ipv6': {
@@ -788,7 +784,7 @@ netdataDashboard.context = {
     },
 
     'mem.writeback': {
-        info: '<b>Dirty</b> 是等待写入磁盘的内存量. <b>Writeback</b> is how much memory is actively being written to disk。'
+        info: '<b>Dirty</b> 是等待写入磁盘的内存量. <b>Writeback</b> 正在写入磁盘的数据量。'
     },
 
     'mem.kernel': {
@@ -818,10 +814,10 @@ netdataDashboard.context = {
     // IP
 
     'ip.inerrors': {
-        info: 'Errors encountered during the reception of IP packets. ' +
-            '<code>noroutes</code> (<code>InNoRoutes</code>) counts packets that were dropped because there was no route to send them. ' +
-            '<code>truncated</code> (<code>InTruncatedPkts</code>) counts packets which is being discarded because the datagram frame didn\'t carry enough data. ' +
-            '<code>checksum</code> (<code>InCsumErrors</code>) counts packets that were dropped because they had wrong checksum. '
+        info: '接收IP数据包时遇到的错误. ' +
+            '<code>没有线路</code>计算丢弃的数据包，因为没有路由发送它们。. ' +
+            '<code>截断</code> (<code>在截断的包中</code>) 计数被丢弃的数据包，因为数据报帧没有携带足够的数据。 ' +
+            '<code>校验</code> (<code>校验错误</code>) 计算由于校验和错误而丢弃的数据包. '
     },
 
     'ip.tcpmemorypressures': {
@@ -857,7 +853,7 @@ netdataDashboard.context = {
     // IPv4
 
     'ipv4.tcpsock': {
-        info: 'The number of established TCP connections (known as <code>CurrEstab</code>). This is a snapshot of the established connections at the time of measurement (i.e. a connection established and a connection disconnected within the same iteration will not affect this metric).'
+        info: '已建立的TCP连接数 (被称为 <code>CurrEstab</code>). 这是测量时建立的连接的快照（即建立的连接和在同一次迭代中断开的连接不会影响该度量）。'
     },
 
     'ipv4.tcpopens': {
