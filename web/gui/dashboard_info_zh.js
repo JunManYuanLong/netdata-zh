@@ -1037,12 +1037,12 @@ netdataDashboard.context = {
         heads: [
             netdataDashboard.gaugeChart('Utilization', '12%', '', '#FF5588')
         ],
-        info: 'Disk Utilization measures the amount of time the disk was busy with something. This is not related to its performance. 100% means that the system always had an outstanding operation on the disk. Keep in mind that depending on the underlying technology of the disk, 100% here may or may not be an indication of congestion.'
+        info: '磁盘利用率衡量磁盘忙于某事的时间。 这与其性能无关。 100％表示系统始终在磁盘上具有出色的操作。 请记住，根据磁盘的基础技术，此处100％可能是也可能不是拥塞的指示.'
     },
 
     'disk.backlog': {
         colors: '#0099CC',
-        info: 'Backlog is an indication of the duration of pending disk operations. On every I/O event the system is multiplying the time spent doing I/O since the last update of this field with the number of pending operations. While not accurate, this metric can provide an indication of the expected completion time of the operations in progress.'
+        info: '积压表示挂起磁盘操作的持续时间。 在每次I / O事件中，系统将自上次更新此字段以来执行I / O所花费的时间乘以待处理操作的数量。 虽然不准确，但该指标可以指示正在进行的操作的预期完成时间.'
     },
 
     'disk.io': {
