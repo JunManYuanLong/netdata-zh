@@ -1050,43 +1050,43 @@ netdataDashboard.context = {
             netdataDashboard.gaugeChart('Read', '12%', 'reads'),
             netdataDashboard.gaugeChart('Write', '12%', 'writes')
         ],
-        info: 'Amount of data transferred to and from disk.'
+        info: '传入和传出磁盘的数据量'
     },
 
     'disk.ops': {
-        info: 'Completed disk I/O operations. Keep in mind the number of operations requested might be higher, since the system is able to merge adjacent to each other (see merged operations chart).'
+        info: '完成磁盘I / O操作。 请记住，请求的操作数可能更高，因为系统能够彼此相邻合并（请参阅合并操作图表）。'
     },
 
     'disk.qops': {
-        info: 'I/O operations currently in progress. This metric is a snapshot - it is not an average over the last interval.'
+        info: 'I / O操作正在进行中。 该指标是一个快照 - 它不是最后一个时间间隔的平均值。'
     },
 
     'disk.iotime': {
         height: 0.5,
-        info: 'The sum of the duration of all completed I/O operations. This number can exceed the interval if the disk is able to execute I/O operations in parallel.'
+        info: '所有已完成的I / O操作的持续时间总和。 如果磁盘能够并行执行I / O操作，则此数字可以超过间隔。'
     },
     'disk.mops': {
         height: 0.5,
-        info: 'The number of merged disk operations. The system is able to merge adjacent I/O operations, for example two 4KB reads can become one 8KB read before given to disk.'
+        info: '合并磁盘操作的数量。 系统能够合并相邻的I / O操作，例如，在给予磁盘之前，两个4KB读取可以成为一个8KB读取。'
     },
     'disk.svctm': {
         height: 0.5,
-        info: 'The average service time for completed I/O operations. This metric is calculated using the total busy time of the disk and the number of completed operations. If the disk is able to execute multiple parallel operations the reporting average service time will be misleading.'
+        info: '完成I / O操作的平均服务时间。 使用磁盘的总繁忙时间和已完成的操作数计算此度量标准。 如果磁盘能够执行多个并行操作，则报告平均服务时间将会产生误导。'
     },
     'disk.avgsz': {
         height: 0.5,
-        info: 'The average I/O operation size.'
+        info: '平均I / O操作大小.'
     },
     'disk.await': {
         height: 0.5,
-        info: 'The average time for I/O requests issued to the device to be served. This includes the time spent by the requests in queue and the time spent servicing them.'
+        info: '发送给设备的I / O请求的平均时间。 这包括队列中的请求所花费的时间以及为其提供服务所花费的时间.'
     },
 
     'disk.space': {
-        info: 'Disk space utilization. reserved for root is automatically reserved by the system to prevent the root user from getting out of space.'
+        info: '磁盘空间利用率。 为root保留的是系统自动保留的，以防止root用户空间不足。'
     },
     'disk.inodes': {
-        info: 'inodes (or index nodes) are filesystem objects (e.g. files and directories). On many types of file system implementations, the maximum number of inodes is fixed at filesystem creation, limiting the maximum number of files the filesystem can hold. It is possible for a device to run out of inodes. When this happens, new files cannot be created on the device, even though there may be free space available.'
+        info: 'inode（或索引节点）是文件系统对象（例如文件和目录）。 在许多类型的文件系统实现中，最大数量的inode在创建文件系统时是固定的，限制了文件系统可以容纳的最大文件数。 设备可能耗尽inode。 发生这种情况时，即使可能有可用空间，也无法在设备上创建新文件.'
     },
 
     'mysql.net': {
